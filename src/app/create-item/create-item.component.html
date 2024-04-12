@@ -1,0 +1,20 @@
+<h2 mat-dialog-title>New Task</h2>
+<mat-dialog-content class="dialog-content">
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput [formControl]="title" />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+  <button
+    mat-button
+    mat-flat-button
+    color="primary"
+    [mat-dialog-close]="title.value"
+    cdkFocusInitial
+    [disabled]="title.invalid"
+  >
+    Add
+  </button>
+</mat-dialog-actions>

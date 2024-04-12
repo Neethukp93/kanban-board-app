@@ -1,0 +1,38 @@
+.block {
+  width: 300px;
+  border: 1px solid black;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.task {
+  padding: 5px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+
+.heading {
+  padding: 1em 0;
+  font-weight: bolder;
+  background: #ffffff;
+  color: #000000;
+  border-bottom: 0.5em solid #ffffff;
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif;
+  border-radius: 10px;
+}
+
+.todo {
+  background: #4676a5;
+}
+
+.implementing {
+  background: #cd7a22;
+}
+
+.done {
+  background: #0b9459;
+}

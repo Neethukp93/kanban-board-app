@@ -1,0 +1,23 @@
+<div class="header">
+  <h1>Kanban Board</h1>
+  <button
+    mat-button
+    mat-flat-button
+    color="primary"
+    (click)="createTask()"
+    class="create-task"
+  >
+    Create Task
+  </button>
+</div>
+<div class="board">
+  <div cdkDropListGroup>
+    @for (board of boardsConfigurations; track board) {
+    <app-board
+      [taskList]="board.taskList"
+      [heading]="board.heading"
+      [headingClass]="board.headingClass"
+    ></app-board>
+    }
+  </div>
+</div>
